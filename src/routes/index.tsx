@@ -374,7 +374,7 @@ function Index() {
       </div>
       <div className="mx-auto mt-3 h-12 w-[min(88vw,360px)]">
         <a
-          href="https://pay.bicaju.com/16f3b1a9-e2fd-4194-a9e4-87cff44dfa62"
+          href="https://pay.lojou.app/LxsQm"
           target="_blank"
           rel="noopener noreferrer"
           aria-hidden={!showPurchaseButton}
