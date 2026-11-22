@@ -19,7 +19,6 @@ export const Route = createFileRoute("/")({
         content: "Uma nova página está sendo preparada.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: Index,
