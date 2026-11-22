@@ -133,8 +133,8 @@ function Index() {
           className="relative m-0 flex h-5 items-center justify-center border-0 p-0 overflow-hidden whitespace-nowrap bg-header px-2 font-headline text-[11px] font-bold leading-none text-header-foreground shadow-none outline-none sm:text-[13px]"
           aria-label="Oferta especial"
         >
-          HACK LIBERADO&nbsp;|&nbsp;DE:&nbsp;<s>8.997 KZ</s>&nbsp;POR:&nbsp;
-          <strong className="text-offer-highlight">4.997 KZ</strong>
+          HACK LIBERADO&nbsp;|&nbsp;DE:&nbsp;<s>647 MT</s>&nbsp;POR:&nbsp;
+          <strong className="text-offer-highlight">347 MT</strong>
         </header>
         <header
           className="relative m-0 flex h-5 items-center justify-center border-0 p-0 overflow-hidden whitespace-nowrap bg-header px-2 font-headline text-[9px] font-bold leading-none text-header-foreground shadow-none outline-none sm:text-[11px]"
