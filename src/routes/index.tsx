@@ -199,7 +199,7 @@ function Index() {
             if (Number.isFinite(video.duration) && video.duration > 0) {
               setVideoProgress((video.currentTime / video.duration) * 100);
             }
-            setShowPurchaseButton(video.currentTime >= 63);
+            setShowPurchaseButton((isVisible) => isVisible || video.currentTime >= 63);
             if (!showReloadNotice && video.currentTime > 1) {
               localStorage.setItem(savedVideoTimeKey, String(video.currentTime));
             }
@@ -214,6 +214,7 @@ function Index() {
           onEnded={() => {
             localStorage.removeItem(savedVideoTimeKey);
             setVideoProgress(100);
+            setShowPurchaseButton(true);
             setShowPauseGif(false);
             setShowEndedNotice(true);
           }}
