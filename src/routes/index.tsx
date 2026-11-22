@@ -11,12 +11,15 @@ export const Route = createFileRoute("/")({
       { rel: "dns-prefetch", href: "//yourimageshare.com" },
     ],
     meta: [
-      { title: "𝗪𝘂𝗸𝗼𝗻𝗴𝗪𝗮𝘇𝗮 | 𝗛𝗮𝗰𝗸 𝗙𝗿𝗲𝗲 𝗙𝗶𝗿𝗲" },
-      { name: "description", content: "Uma nova página está sendo preparada." },
-      { property: "og:title", content: "Página em breve" },
+      { title: "WukongWaza | Hack Free Fire" },
+      {
+        name: "description",
+        content: "O HACK DE FREE FIRE QUE OS PRINCIPAIS INFLUENCERS DO MOMENTO USAM EM SEGREDO ACABA DE SER VAZADO.",
+      },
+      { property: "og:title", content: "WukongWaza | Hack Free Fire" },
       {
         property: "og:description",
-        content: "Uma nova página está sendo preparada.",
+        content: "O HACK DE FREE FIRE QUE OS PRINCIPAIS INFLUENCERS DO MOMENTO USAM EM SEGREDO ACABA DE SER VAZADO.",
       },
       { property: "og:type", content: "website" },
     ],
