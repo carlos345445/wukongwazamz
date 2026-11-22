@@ -2,8 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { formatOfferCountdown, OFFER_DURATION_SECONDS } from "@/lib/offer-countdown";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
   head: () => ({
     links: [
@@ -22,6 +20,9 @@ export const Route = createFileRoute("/")({
         content: "O HACK DE FREE FIRE QUE OS PRINCIPAIS INFLUENCERS DO MOMENTO USAM EM SEGREDO ACABA DE SER VAZADO.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://raw.githubusercontent.com/carlos345445/wukongwazamz/main/public/share-transparent.png" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:image", content: "https://raw.githubusercontent.com/carlos345445/wukongwazamz/main/public/share-transparent.png" },
     ],
   }),
   component: Index,

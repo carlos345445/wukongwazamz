@@ -84,6 +84,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Lovable App" },
       { property: "og:description", content: "Lovable Generated Project" },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://raw.githubusercontent.com/carlos345445/wukongwazamz/main/public/share-transparent.png" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:image", content: "https://raw.githubusercontent.com/carlos345445/wukongwazamz/main/public/share-transparent.png" },
     ],
     links: [
       {
