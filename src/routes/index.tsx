@@ -32,8 +32,15 @@ function Index() {
   const [showEndedNotice, setShowEndedNotice] = useState(false);
   const [videoProgress, setVideoProgress] = useState(0);
   const [showPurchaseButton, setShowPurchaseButton] = useState(false);
+  const purchaseButtonSeenKey = "wukongwaza-purchase-button-seen";
   const [showSoundPrompt, setShowSoundPrompt] = useState(false);
   const savedVideoTimeKey = "wukongwaza-vsl-current-time";
+
+  useEffect(() => {
+    if (localStorage.getItem(purchaseButtonSeenKey) === "true") {
+      setShowPurchaseButton(true);
+    }
+  }, []);
   const soundPromptSeenKey = "wukongwaza-sound-prompt-seen";
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const faqRef = useRef<HTMLElement>(null);
@@ -199,7 +206,11 @@ function Index() {
             if (Number.isFinite(video.duration) && video.duration > 0) {
               setVideoProgress((video.currentTime / video.duration) * 100);
             }
-            setShowPurchaseButton((isVisible) => isVisible || video.currentTime >= 63);
+            if (video.currentTime >= 63) {
+              localStorage.setItem(purchaseButtonSeenKey, "true");
+              setShowPurchaseButton(true);
+            localStorage.setItem(purchaseButtonSeenKey, "true");
+            }
             if (!showReloadNotice && video.currentTime > 1) {
               localStorage.setItem(savedVideoTimeKey, String(video.currentTime));
             }
